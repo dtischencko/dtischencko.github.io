@@ -31,3 +31,9 @@
 body {
     margin:0;
 }
+footer {
+    width: 100%;
+    background-color: #ffd800;
+    padding: 10px;
+    height: 120px;
+}
