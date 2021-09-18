@@ -28,3 +28,6 @@
     vertical-align: inherit;
     border-color: inherit;
 }
+body {
+    margin:0;
+}
