@@ -1,0 +1,30 @@
+#hstyle {
+    width:100%;
+    background-color:#ffd800;
+    padding:10px;
+    height:120px;
+}
+#imgstyle {
+    float:left;
+    margin:10px;
+    width:100px;
+    height:100px;
+}
+#bstyle {
+    width:100%;
+    background-color:#ffd800;
+    margin:40px;
+    padding:50px;
+}
+.col1 {
+    background-color: #ccc;
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+.col2 {
+    background-color: #ddd;
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
