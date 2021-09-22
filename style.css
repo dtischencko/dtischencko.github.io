@@ -28,12 +28,17 @@
     vertical-align: inherit;
     border-color: inherit;
 }
-body {
-    margin:0;
+.flex-container {
+    display:flex;
+    background-color:deepskyblue;
+    flex-wrap:wrap;
 }
-footer {
-    width: 100%;
-    background-color: #ffd800;
-    padding: 10px;
-    height: 120px;
+.flex-container > div {
+    background-color:#b6ff00;
+    margin:10px;
+    padding:20px;
+    width:164.5px;
+    text-align:center;
+    line-height:30px;
+    font-size:30px;
 }

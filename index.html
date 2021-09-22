@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="style.css" type="text/css" />
-        <title>Задание №2. Сайт HTML и CSS.</title>
-    </head>
-    <body>
+<head>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>Задание №2. Сайт HTML и CSS.</title>
+</head>
+<body>
     <header>
         <div id="hstyle">
-            <img id="imgstyle" src="image.png" alt="Лого"/>
+            <img id="imgstyle" src="image.png" alt="Лого" />
             <div style="background-color:#ff6a00; padding:10px;"><b>Сайт Тищенко Дмитрия №2</b></div>
         </div>
     </header>
-        <a id="top"></a>
-        <div style="max-width:800px; background-color:#ffd800; margin: 0 auto; margin-top:20px; padding:10px;">
-            <nav><a href="#hyp">Список гиперссылок</a> | <a href="#tab">Таблица</a> | <a href="#form">Форма</a></nav>
-        </div>
-        <a id="hyp"></a>
-        <div id="bstyle">
+    <a id="top"></a>
+    <div style="max-width:800px; background-color:#ffd800; margin: 0 auto; margin-top:20px; padding:10px;">
+        <nav><a href="#hyp">Список гиперссылок</a> | <a href="#tab">Таблица</a> | <a href="#form">Форма</a> | <a href="page2.html">Задание №3. "Flexbox"</a></nav>
+    </div>
+    <a id="hyp"></a>
+    <div id="bstyle">
         <h2>Список гиперссылок:</h2>
         <ol>
             <li><a href="http://example.com/" title="Абсолютная гиперссылка">http://example.com/</a></li>
@@ -26,20 +26,29 @@
             <li><a href="http://example.com/about#anchor" title="Ссылка на фрагмент некоторого сайта">http://example.com/about#anchor</a></li>
             <li><a href="#top" title="Ссылка на фрагмент данной страницы">Наверх!</a></li>
             <li><a href="http://example.com?type=rock&color=grey" title="Ссылка с двумя параметрами">http://example.com?type=rock&color=grey</a></li>
-            <li><a href="#top" title="Начало сайта">К началу</a><br />
-                <a href="#form" title="Форма на сайте">К форме</a></li>
+            <li>
+                <a href="#top" title="Начало сайта">К началу</a><br />
+                <a href="#form" title="Форма на сайте">К форме</a>
+            </li>
             <li><a title="Данная ссылка без href">Ссылка</a></li>
             <li><a href="10" title="Ссылка с пустым href">Пункт 10</a></li>
             <li><a href="http://example.com/" rel="nofollow" title="Запрещен переход поисковикам">http://example.com/</a></li>
             <li><a href="http://example.com/" rel="noindex" title="Запрещена для индексации">http://example.com/</a></li>
-            <li>Далее следует абзац
-                <p>Начался абзац, мне не нравится язык разметки гипертекста <a href="https://ru.wikipedia.org/wiki/HTML" title="Ссылка на WIKI">HTML</a>,
-                    слишком нудный и немножко скучный :)</p></li>
+            <li>
+                Далее следует абзац
+                <p>
+                    Начался абзац, мне не нравится язык разметки гипертекста <a href="https://ru.wikipedia.org/wiki/HTML" title="Ссылка на WIKI">HTML</a>,
+                    слишком нудный и немножко скучный :)
+                </p>
+            </li>
             <li><a href="http://example.com/"> <img src="image.jpg" alt="Цветочек" style="width: 100px" title="Ссылка-картинка"></a></li>
-            <li><img src="image.jpg" alt="Цветочек" style="width: 250px" usemap="#rect"/>
+            <li>
+                <img src="image.jpg" alt="Цветочек" style="width: 250px" usemap="#rect" />
                 <map id="rect" name="rect">
-                    <area shape="rect" href="http://example.com/" coords="5,5,25,25" alt="Прямоугольная зона ссылки" title="Прямоугольная зона ссылки"/>
-                    <area shape="circle" href="http://example.com/" coords="45,45,25" alt="Круглая зона ссылки" title="Круглая зона ссылки"/></map></li>
+                    <area shape="rect" href="http://example.com/" coords="5,5,25,25" alt="Прямоугольная зона ссылки" title="Прямоугольная зона ссылки" />
+                    <area shape="circle" href="http://example.com/" coords="45,45,25" alt="Круглая зона ссылки" title="Круглая зона ссылки" />
+                </map>
+            </li>
             <li><a href="sitefile.html" title="Ссылка на страницу в текущем каталоге">Ссылка</a></li>
             <li><a href="about/sitefile.html" title="Ссылка на страницу в каталоге about">Ссылка</a></li>
             <li><a href="../sitefile.html" title="Ссылка на страницу выше уровня текущего">Ссылка</a></li>
@@ -49,33 +58,33 @@
         </ol>
         <a id="tab"></a>
         <h2>Таблица:</h2>
-            <table style="border-collapse: separate; text-indent: initial; border-spacing: 2px;">
-                <tbody>
-                    <tr>
-                        <td colspan="3">Моя небольшая таблица</td>
-                    </tr>
-                    <tr class="col1">
-                        <th>1</th>
-                        <th>2</th>
-                        <th>3</th>
-                    </tr>
-                    <tr class="col2">
-                        <th>1</th>
-                        <th>2</th>
-                        <th>3</th>
-                    </tr>
-                    <tr class="col1">
-                        <th>1</th>
-                        <th>2</th>
-                        <th>3</th>
-                    </tr>
-                    <tr class="col2">
-                        <th>1</th>
-                        <th>2</th>
-                        <th>3</th>
-                    </tr>
-                </tbody>
-            </table>
+        <table style="border-collapse: separate; text-indent: initial; border-spacing: 2px;">
+            <tbody>
+                <tr>
+                    <td colspan="3">Моя небольшая таблица</td>
+                </tr>
+                <tr class="col1">
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                </tr>
+                <tr class="col2">
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                </tr>
+                <tr class="col1">
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                </tr>
+                <tr class="col2">
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                </tr>
+            </tbody>
+        </table>
         <a id="form"></a>
         <h2>Форма:</h2>
         <form action="/" method="post">
@@ -145,8 +154,8 @@
             </label><br />
             <input type="submit" value="Отправить" />
         </form>
-        </div>
-    <footer style=" width: 100%; background-color: #ffd800; padding: 10px; height: 120px;">
+    </div>
+    <footer>
         <address>
             <a href="https://kubsu.ru/" title="Кубанский Государственный Университет">КубГУ</a><br />
             Ставропольская ул., 149,<br />
@@ -155,5 +164,5 @@
             Краснодар
         </address>
     </footer>
-    </body>
+</body>
 </html>
