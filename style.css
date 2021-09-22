@@ -1,3 +1,13 @@
+#fstyle {
+    width: 100%;
+    background-color: #ffd800;
+    padding: 10px;
+    height: 120px;
+}
+
+body {
+    margin: 0;
+}
 #hstyle {
     width:100%;
     background-color:#ffd800;
