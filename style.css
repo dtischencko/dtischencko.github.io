@@ -1,7 +1,7 @@
 #fstyle {
     width: 100%;
     background-color: #ffd800;
-    padding: 10px;
+    padding: 0px;
     height: 120px;
 }
 
@@ -17,14 +17,14 @@ body {
 #imgstyle {
     float:left;
     margin:10px;
-    width:100px;
-    height:100px;
+    width:75px;
+    height:75px;
 }
 #bstyle {
     width:100%;
     background-color:#ffd800;
-    margin:40px;
-    padding:50px;
+    margin:20px;
+    padding:25px;
 }
 .col1 {
     background-color: #ccc;
@@ -44,17 +44,12 @@ body {
     flex-direction: row;
     justify-content: space-around;
 }
-@media (max-width: 660px) {
+@media screen and (max-width: 660px) {
     .flex-container {
         flex-direction: column;
     }
     .fl-bg {
         max-width:260px;
-    }
-}
-@media (min-width: 1000px) {
-    .flex-container {
-        flex-direction: row;
     }
 }
 .flex-container > div {
