@@ -2,6 +2,27 @@
 var pp;
 ///
 
+$(function () {
+    $('.slider').slick({
+        dots: true,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        responsive: [
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    infinite: false,
+                    dots: true
+                }
+            }
+        ]
+    });
+});
+
 function updatePrice() {
   // Находим select по имени в DOM.
   let s = document.getElementsByName("prodType");
