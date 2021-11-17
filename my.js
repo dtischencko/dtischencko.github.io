@@ -132,6 +132,8 @@ function calc() {
     return false;
 }
 
+
+
 window.addEventListener("DOMContentLoaded", function name(event) {
     console.log("DOM LOADED A FEW SECONDS AGO");
     let button1 = document.getElementById("button1");
